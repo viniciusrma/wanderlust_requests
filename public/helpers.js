@@ -1,3 +1,4 @@
+// Construct the HTML string to display the venue info.
 const createVenueHTML = (name, location, iconSource) => {
   return `<h2>${name}</h2>
     <img class="venueimage" src="${iconSource}"/>
@@ -7,6 +8,7 @@ const createVenueHTML = (name, location, iconSource) => {
     <p>${location.country}</p>`;
 }
 
+// Construct the HTML string to display the Weather info.
 const createWeatherHTML = (currentDay) => {
   console.log(currentDay)
   return `<h2>${weekDays[(new Date()).getDay()]}</h2>
