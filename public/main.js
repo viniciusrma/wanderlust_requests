@@ -59,10 +59,9 @@ const renderVenues = (venues) => {
 }
 
 const renderForecast = (day) => {
-
-  let weatherContent = '';
+  const weatherContent = createWeatherHTML(day);
   $weatherDiv.append(weatherContent);
-}
+};
 
 const executeSearch = () => {
   $venueDivs.forEach(venue => venue.empty());
@@ -70,7 +69,7 @@ const executeSearch = () => {
   $destination.empty();
   $container.css("visibility", "visible");
   getVenues().then(venues => renderVenues(venues));
-  getForecast()
+  getForecast().then(forecast => renderForecast(forecast));
   return false;
 }
 
