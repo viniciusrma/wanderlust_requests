@@ -69,7 +69,7 @@ const executeSearch = () => {
   $weatherDiv.empty();
   $destination.empty();
   $container.css("visibility", "visible");
-  getVenues().then(venues => renderVenues(venue));
+  getVenues().then(venues => renderVenues(venues));
   getForecast()
   return false;
 }
