@@ -1,5 +1,5 @@
 <h1  align="center">
-  <img src="https://i.ibb.co/0jWbPm4/requests.png" alt="class-js" border="0">
+  <img src="https://i.ibb.co/sqVjNk5/logo.png" alt="class-js" border="0">
 </h1>
 
 ##  🏕 Wanderlust 🏞
